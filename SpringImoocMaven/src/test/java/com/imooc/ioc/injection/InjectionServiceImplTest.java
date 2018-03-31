@@ -15,5 +15,9 @@ public class InjectionServiceImplTest extends TestCase {
         InjectionService injectionService = context.getBean("injectionService", InjectionService.class);
         String userName = "Alice";
         injectionService.sayHelloWorld(userName);
+
+        InjectionService injectionService2 = context.getBean("injectionService", InjectionService.class);
+        //String userName = "Alice";
+        injectionService2.sayHelloWorld(userName);
     }
 }
