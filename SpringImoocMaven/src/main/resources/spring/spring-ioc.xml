@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-       <bean id="oneInterface" class="com.imooc.ioc.interfaces.OneInterfaceImpl"></bean>
-
-       <bean id="injectionService" class="com.imooc.ioc.injection.InjectionServiceImpl">
-           <property name="injectionDAO" ref="injectionDAO"></property>
-       </bean>
-
-       <bean id="injectionDAO" class="com.imooc.ioc.injectionDAO.InjectionDAOImpl"></bean>
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd" >
+    <bean id="oneInterface" class="com.imooc.ioc.interfaces.OneInterfaceImpl"></bean>
+    <!-- bean的销毁， 配置全局默认初始化，销毁方法 default-init-method="init-method" default-destroy-method="destroy-method" -->
+    <!-- 通过设值在injectionService中注入injectionDAO-->
+    <!-- scope设置bean的作用域 -->
+    <!-- bean的作用域 singleton(单例，只一个bean容器中只存在一份), prototype(每次请求（每次使用）的时候创建新的实例，destroy方法不生效), request, session, global session -->
+    <!-- 每次请求（每次使用创建一个新的实例）-->
+    <!--<bean id="injectionService" class="com.imooc.ioc.injection.InjectionServiceImpl" scope="prototype">-->
+    <!--<property name="injectionDAO" ref="injectionDAO"></property>-->
+    <!--</bean>-->
+    <!-- 单例模式，设值注入-->
+    <bean id="injectionService" class="com.imooc.ioc.injection.InjectionServiceImpl" scope="singleton">
+        <!-- 设值注入-->
+        <!--<property name="injectionDAO" ref="injectionDAO"></property>-->
+        <!-- 构造器注入-->
+        <constructor-arg name="injectionDAO" ref="injectionDAO"></constructor-arg>
+    </bean>
+    <!-- 定义一个bean-->
+    <bean id="injectionDAO" class="com.imooc.ioc.injectionDAO.InjectionDAOImpl"></bean>
+    <!-- bean的生命周期 -->
+    <bean id="lifeCircle" class="com.imooc.ioc.lifeCircle.LifeCircle" init-method="init" destroy-method="destroy"></bean>
 </beans>
