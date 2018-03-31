@@ -8,7 +8,12 @@ public class InjectionServiceImpl implements InjectionService {
     private InjectionDAO injectionDAO;
 
     // 通过设值注入依赖（injectionDAO）
-    public void setInjectionDAO(InjectionDAO injectionDAO) {
+//    public void setInjectionDAO(InjectionDAO injectionDAO) {
+//        this.injectionDAO = injectionDAO;
+//    }
+
+    // 通过构造器注入依赖(injectionDAO)
+    public InjectionServiceImpl(InjectionDAO injectionDAO) {
         this.injectionDAO = injectionDAO;
     }
 
