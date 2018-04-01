@@ -23,4 +23,8 @@
     <bean id="injectionDAO" class="com.imooc.ioc.injectionDAO.InjectionDAOImpl"></bean>
     <!-- bean的生命周期 -->
     <bean id="lifeCircle" class="com.imooc.ioc.lifeCircle.LifeCircle" init-method="init" destroy-method="destroy"></bean>
+
+    <bean id="moocApplicationContext" class="com.imooc.ioc.aware.MoocApplicationContext"></bean>
+
+    <bean id="moocBeanName" class="com.imooc.ioc.aware.MoocBeanName"></bean>
 </beans>
