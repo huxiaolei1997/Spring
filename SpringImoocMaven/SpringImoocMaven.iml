@@ -21,8 +21,8 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
-    <output url="file://$MODULE_DIR$/../../Spring/SpringImoocMaven/target/classes" />
-    <output-test url="file://$MODULE_DIR$/../../Spring/SpringImoocMaven/target/test-classes" />
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$/../../Spring/SpringImoocMaven">
       <sourceFolder url="file://$MODULE_DIR$/../../Spring/SpringImoocMaven/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../Spring/SpringImoocMaven/src/main/java" isTestSource="false" />
