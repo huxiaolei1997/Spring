@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd" >
+       http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byType">
     <bean id="oneInterface" class="com.imooc.ioc.interfaces.OneInterfaceImpl"></bean>
     <!-- bean的销毁， 配置全局默认初始化，销毁方法 default-init-method="init-method" default-destroy-method="destroy-method" -->
     <!-- 通过设值在injectionService中注入injectionDAO-->
@@ -27,4 +27,9 @@
     <bean id="moocApplicationContext" class="com.imooc.ioc.aware.MoocApplicationContext"></bean>
 
     <bean id="moocBeanName" class="com.imooc.ioc.aware.MoocBeanName"></bean>
+
+    <!-- 如果是byType注入依赖，那么bean id是不用填写的，byName 注入，bean id是必须要填写的 -->
+    <bean id="autoWiringDAO" class="com.imooc.ioc.autowiring.AutoWiringDAO"></bean>
+
+    <bean id="autoWiringService" class="com.imooc.ioc.autowiring.AutoWiringService"></bean>
 </beans>
