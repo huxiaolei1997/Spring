@@ -32,4 +32,7 @@
     <bean id="autoWiringDAO" class="com.imooc.ioc.autowiring.AutoWiringDAO"></bean>
 
     <bean id="autoWiringService" class="com.imooc.ioc.autowiring.AutoWiringService"></bean>
+
+    <!-- resource -->
+    <bean id="moocResource" class="com.imooc.ioc.resource.MoocResource"></bean>
 </beans>
