@@ -16,7 +16,7 @@ public class MoocApplicationContextTest extends TestCase {
         abstractApplicationContext.start();
         MoocApplicationContext moocApplicationContext = abstractApplicationContext.getBean("moocApplicationContext", MoocApplicationContext.class);
         moocApplicationContext.test();
-        System.out.println("MoocApplicationContext:" + abstractApplicationContext.hashCode());
+        System.out.println("MoocApplicationContext:" + moocApplicationContext.hashCode());
         abstractApplicationContext.close();
         //MoocApplicationContext moocApplicationContext = abstractApplicationContext.getBean("moocApplicationContext", MoocApplicationContext.class);
         //moocApplicationContext.setApplicationContext(abstractApplicationContext);
