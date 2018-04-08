@@ -1,6 +1,7 @@
 package com.imooc.ioc.annotation.multibean;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,6 +17,10 @@ public class BeanInvoker {
     // 把BeanInterface的id和实例放进Map中
     @Autowired
     private Map<String, BeanInterface> map;
+
+    @Autowired
+    @Qualifier("beanInterfaceImplOne")
+    private BeanInterface beanInterface;
 
     public void say() {
         if (list != null && list.size() != 0) {
@@ -35,5 +40,12 @@ public class BeanInvoker {
         } else {
             System.out.println("Map<String, BeanInterface> map is null !!!");
         }
+
+        if (beanInterface != null) {
+            System.out.println(beanInterface.getClass().getName());
+        } else {
+            System.out.println("beanInterface is null !!!");
+        }
+
     }
 }
