@@ -5,53 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3bfde0-1a5c-45cb-b0e2-9ea8c970a520" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/SpringImoocMaven.war" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/SpringImoocMaven/WEB-INF/classes/spring/config.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/BeanAnnotation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/injection/InjectionService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/injection/InjectionServiceImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/injectionDAO/InjectionDAO.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/injectionDAO/InjectionDAOImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/javabased/DoubleStore.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/javabased/IntegerStore.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/javabased/MyDriverManager.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/javabased/Store.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/javabased/StoreConfig.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/javabased/StringStoreImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/multibean/BeanInterface.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/multibean/BeanInterfaceImplOne.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/multibean/BeanInterfaceImplTwo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/annotation/multibean/BeanInvoker.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/autowiring/AutoWiringDAO.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/autowiring/AutoWiringService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/aware/MoocApplicationContext.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/aware/MoocBeanName.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/injection/InjectionService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/injection/InjectionServiceImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/injectionDAO/InjectionDAO.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/injectionDAO/InjectionDAOImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/interfaces/OneInterface.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/interfaces/OneInterfaceImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/lifeCircle/LifeCircle.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/com/imooc/ioc/resource/MoocResource.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/jdbc/config.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/jdbc/config.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/spring/config.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/spring/spring-beanannotation.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/classes/spring/spring-ioc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/annotation/BeanAnnotationTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/annotation/injection/InjectionServiceImplTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/annotation/javabased/StoreConfigTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/annotation/multibean/BeanInvokerTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/autowiring/AutoWiringServiceTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/aware/MoocApplicationContextTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/aware/MoocBeanNameTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/injection/InjectionServiceImplTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/interfaces/Test.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/interfaces/TestTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/lifeCircle/LifeCircleTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/resource/MoocResourceTest.class" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <manually-removed-from-ignored>
       <directory path="$PROJECT_DIR$/target/" />
@@ -136,7 +91,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="19">
-                <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+                <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -295,8 +250,8 @@
     <option name="vmOptions" value="-DarchetypeCatalog=local" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="233" />
-    <option name="y" value="43" />
+    <option name="x" value="108" />
+    <option name="y" value="26" />
     <option name="width" value="1346" />
     <option name="height" value="665" />
   </component>
@@ -641,7 +596,7 @@
       <workItem from="1523272917327" duration="1864000" />
       <workItem from="1523367960118" duration="33000" />
       <workItem from="1523370437096" duration="1510000" />
-      <workItem from="1523444485126" duration="2748000" />
+      <workItem from="1523444485126" duration="3376000" />
     </task>
     <task id="LOCAL-00001" summary="bean生命周期">
       <created>1522510927005</created>
@@ -965,7 +920,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523447099077</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="更新编译之后的文件。">
+      <created>1523447253254</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1523447253255</updated>
+    </task>
+    <task id="LOCAL-00048" summary="update">
+      <created>1523447343271</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1523447343271</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1001,10 +970,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47471000" />
+    <option name="totallyTimeSpent" value="48099000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="233" y="43" width="1346" height="665" extended-state="0" />
+    <frame x="108" y="26" width="1346" height="665" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3231939" sideWeight="0.49097744" order="11" side_tool="false" content_ui="tabs" />
@@ -1020,7 +989,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32518798" sideWeight="0.49398497" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22083981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22083981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1094,13 +1063,13 @@
     <MESSAGE value="Spring Bean装配之基于Java的容器注解说明——@ImportResource和@Value" />
     <MESSAGE value="基于Java的容器注解说明——@Bean和@Scope" />
     <MESSAGE value="基于泛型的自动装配" />
-    <MESSAGE value="update" />
     <MESSAGE value="update 泛型" />
     <MESSAGE value="update 基于泛型的自动装配" />
     <MESSAGE value="update project" />
     <MESSAGE value="update readme.md" />
     <MESSAGE value="更新编译之后的文件。" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新编译之后的文件。" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1481,7 +1450,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="19">
-            <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
