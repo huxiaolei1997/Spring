@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-context.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       default-autowire="constructor">
+    <bean id="oneInterface" class="com.imooc.ioc.interfaces.OneInterfaceImpl"></bean>
+    <!-- bean的销毁， 配置全局默认初始化，销毁方法 default-init-method="init-method" default-destroy-method="destroy-method" -->
+    <!-- 通过设值在injectionService中注入injectionDAO-->
+    <!-- scope设置bean的作用域 -->
+    <!-- bean的作用域 singleton(单例，只一个bean容器中只存在一份), prototype(每次请求（每次使用）的时候创建新的实例，destroy方法不生效), request, session, global session -->
+    <!-- 每次请求（每次使用创建一个新的实例）-->
+    <!--<bean id="injectionService" class="com.imooc.ioc.injection.InjectionServiceImpl" scope="prototype">-->
+    <!--<property name="injectionDAO" ref="injectionDAO"></property>-->
+    <!--</bean>-->
+    <!-- 单例模式，设值注入-->
+    <bean id="injectionService" class="com.imooc.ioc.injection.InjectionServiceImpl" scope="singleton">
+        <!-- 设值注入-->
+        <!--<property name="injectionDAO" ref="injectionDAO"></property>-->
+        <!-- 构造器注入-->
+        <constructor-arg name="injectionDAO" ref="injectionDAO"></constructor-arg>
+    </bean>
+    <!-- 定义一个bean-->
+    <bean id="injectionDAO" class="com.imooc.ioc.injectionDAO.InjectionDAOImpl"></bean>
+    <!-- bean的生命周期 -->
+    <bean id="lifeCircle" class="com.imooc.ioc.lifeCircle.LifeCircle" init-method="init" destroy-method="destroy"></bean>
+
+    <bean id="moocApplicationContext" class="com.imooc.ioc.aware.MoocApplicationContext"></bean>
+
+    <bean id="moocBeanName" class="com.imooc.ioc.aware.MoocBeanName"></bean>
+
+    <!-- 如果是byType注入依赖，那么bean id是不用填写的，byName 注入，bean id是必须要填写的，现在通过default-autowire自动注入依赖，而不必在bean里面配置设值注入或者构造器注入 -->
+    <bean id="autoWiringDAO" class="com.imooc.ioc.autowiring.AutoWiringDAO"></bean>
+
+    <bean id="autoWiringService" class="com.imooc.ioc.autowiring.AutoWiringService"></bean>
+
+    <!-- resource -->
+    <bean id="moocResource" class="com.imooc.ioc.resource.MoocResource"></bean>
+    
+    <context:component-scan base-package="com.imooc.ioc.annotation"></context:component-scan>
+</beans>
