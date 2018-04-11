@@ -1,4 +1,4 @@
 package com.imooc.ioc.annotation.javabased;
 
-public interface Store {
+public interface Store<T> {
 }
