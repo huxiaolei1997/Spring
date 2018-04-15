@@ -784,14 +784,7 @@
       <workItem from="1523715515824" duration="1217000" />
       <workItem from="1523716839135" duration="271000" />
       <workItem from="1523717838800" duration="1386000" />
-      <workItem from="1523769448035" duration="1233000" />
-    </task>
-    <task id="LOCAL-00018" summary="获取资源文件">
-      <created>1522765850463</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1522765850463</updated>
+      <workItem from="1523769448035" duration="1280000" />
     </task>
     <task id="LOCAL-00019" summary="Resource测试文件">
       <created>1522765877675</created>
@@ -1129,7 +1122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523770681724</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="更新编译之后的文件">
+      <created>1523770748998</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1523770748998</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1165,7 +1165,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59651000" />
+    <option name="totallyTimeSpent" value="59698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="197" y="43" width="1346" height="640" extended-state="0" />
@@ -1239,7 +1239,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="基于java的容器注解（test）" />
     <MESSAGE value="Spring Bean装配之基于Java的容器注解说明——@ImportResource和@Value 配置文件" />
     <MESSAGE value="构造器 Spring Bean装配之基于Java的容器注解说明——@ImportResource和@Value" />
     <MESSAGE value="Spring Bean装配之基于Java的容器注解说明——@ImportResource和@Value" />
@@ -1264,7 +1263,8 @@
     <MESSAGE value="advice应用（下） 环绕通知 测试类" />
     <MESSAGE value="advice应用（下） 环绕通知 更新工程文件配置" />
     <MESSAGE value="advice应用（下） 更新工程文件配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="advice应用（下） 更新工程文件配置" />
+    <MESSAGE value="更新编译之后的文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新编译之后的文件" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
