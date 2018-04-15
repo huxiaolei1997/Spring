@@ -18,7 +18,8 @@ public class AspectBizTest extends TestCase {
         AspectBiz biz = abstractApplicationContext.getBean("aspectBiz", AspectBiz.class);
         //JsrService jsrService = abstractApplicationContext.getBean("jsrService", JsrService.class);
         //jsrService.save();
-        biz.biz();
+        //biz.biz();
+        biz.init("moocService", 3);
         //System.out.println(myDriverManager.getClass().getName());
         abstractApplicationContext.close();
     }
