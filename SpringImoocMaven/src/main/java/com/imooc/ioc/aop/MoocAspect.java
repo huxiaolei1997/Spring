@@ -1,6 +1,7 @@
 package com.imooc.ioc.aop;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 
 public class MoocAspect {
 
@@ -19,4 +20,30 @@ public class MoocAspect {
     public void after() {
         System.out.println("MoocAspect after");
     }
+
+    public Object around(ProceedingJoinPoint proceedingJoinPoint) {
+        Object obj = null;
+        try {
+            System.out.println("MoocAspect around1");
+            obj = proceedingJoinPoint.proceed();
+            System.out.println("MoocAspect around2");
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        return obj;
+    }
+
+    public Object aroundInit(ProceedingJoinPoint proceedingJoinPoint, String bizName, int times) {
+        System.out.println(bizName + ", " + times);
+        Object obj = null;
+        try {
+            System.out.println("MoocAspect aroundInit1");
+            obj = proceedingJoinPoint.proceed();
+            System.out.println("MoocAspect aroundInit2");
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        return obj;
+    }
+
 }
