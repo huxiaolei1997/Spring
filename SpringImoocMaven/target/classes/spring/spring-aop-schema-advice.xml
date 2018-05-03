@@ -21,9 +21,10 @@
             <!--<aop:after method="after" pointcut-ref="moocPointcut"/>-->
             <!--<aop:around method="around" pointcut-ref="moocPointcut"/>-->
             <!--<aop:around method="aroundInit"-->
-                        <!--pointcut="execution(* com.imooc.ioc.aop.biz.AspectBiz.init(String, int)) and args(bizName, times)"/>-->
+            <!--pointcut="execution(* com.imooc.ioc.aop.biz.AspectBiz.init(String, int)) and args(bizName, times)"/>-->
             <!-- 为匹配到的类强制指定了一个父类，这里就是为biz包下面的类强制指定了FitImpl类为其父类，FitImpl是Fit接口的实现类-->
-            <aop:declare-parents types-matching="com.imooc.ioc.aop.biz.*+" implement-interface="com.imooc.ioc.aop.Fit" default-impl="com.imooc.ioc.aop.FitImpl"/>
+            <aop:declare-parents types-matching="com.imooc.ioc.aop.biz.*+" implement-interface="com.imooc.ioc.aop.Fit"
+                                 default-impl="com.imooc.ioc.aop.FitImpl"/>
 
         </aop:aspect>
     </aop:config>
