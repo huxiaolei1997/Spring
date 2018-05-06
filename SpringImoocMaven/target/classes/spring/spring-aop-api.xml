@@ -46,28 +46,28 @@
     <!--<bean id="bizLogicImplTarget" class="com.imooc.aop.api.BizLogicImpl"></bean>-->
 
     <!--<bean id="bizLogicImpl" class="org.springframework.aop.framework.ProxyFactoryBean">-->
-        <!--<property name="proxyInterfaces">-->
-            <!--<value>com.imooc.ioc.aop.api.BizLogic</value>-->
-        <!--</property>-->
-        <!--<property name="target">-->
-            <!--<bean class="com.imooc.ioc.aop.api.BizLogicImpl"></bean>-->
-            <!--&lt;!&ndash;<ref bean="bizLogicImplTarget"/>&ndash;&gt;-->
-        <!--</property>-->
-        <!--<property name="interceptorNames">-->
-            <!--<list>-->
-                <!--<value>moocBeforeAdvice</value>-->
-                <!--<value>moocAfterReturningAdvice</value>-->
-                <!--<value>moocMethodInterceptor</value>-->
-                <!--<value>moocThrowsAdvice</value>-->
-                <!--<value>mooc*</value>-->
-            <!--</list>-->
-        <!--</property>-->
+    <!--<property name="proxyInterfaces">-->
+    <!--<value>com.imooc.ioc.aop.api.BizLogic</value>-->
+    <!--</property>-->
+    <!--<property name="target">-->
+    <!--<bean class="com.imooc.ioc.aop.api.BizLogicImpl"></bean>-->
+    <!--&lt;!&ndash;<ref bean="bizLogicImplTarget"/>&ndash;&gt;-->
+    <!--</property>-->
+    <!--<property name="interceptorNames">-->
+    <!--<list>-->
+    <!--<value>moocBeforeAdvice</value>-->
+    <!--<value>moocAfterReturningAdvice</value>-->
+    <!--<value>moocMethodInterceptor</value>-->
+    <!--<value>moocThrowsAdvice</value>-->
+    <!--<value>mooc*</value>-->
+    <!--</list>-->
+    <!--</property>-->
     <!--</bean>-->
 
     <bean id="baseProxyBean" class="org.springframework.aop.framework.ProxyFactoryBean"
           lazy-init="true" abstract="true"></bean>
 
-    <bean id="bizLogicImpl"  parent="baseProxyBean">
+    <bean id="bizLogicImpl" parent="baseProxyBean">
         <property name="target">
             <bean class="com.imooc.ioc.aop.api.BizLogicImpl"></bean>
         </property>
