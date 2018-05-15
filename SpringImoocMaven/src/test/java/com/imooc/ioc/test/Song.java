@@ -21,6 +21,7 @@ public class Song {
     @Override
     public boolean equals(Object aSong) {
         Song s = (Song) aSong;
+        // 因为title是String类型，而且String类型本身就已经覆盖过equals()方法了，所以我们这里可以直接调用equals()方法
         return getTitle().equals(s.getTitle());
     }
 
