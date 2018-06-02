@@ -1,7 +1,5 @@
 package com.imooc.ioc.test;
 
-import oracle.jdbc.driver.OracleDriver;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
@@ -11,14 +9,17 @@ import java.util.*;
  * 连接Oracle工具类
  *
  * @author xiaolei hu
- * @date 2018/6/2 11:44
+ * @date 2018/6/2 13:28
  **/
-public class JdbcUtil {
+public class JdbcUtil2 {
     // 表示定义数据库的用户名
     private static String USERNAME;
 
     // 定义数据库的密码
     private static String PASSWORD;
+
+    // 定义数据库的驱动信息
+    private static String DRIVER;
 
     // 定义访问数据库的地址
     private static String URL;
@@ -32,22 +33,18 @@ public class JdbcUtil {
     // 数据库返回的结果集
     private ResultSet resultSet;
 
-    // properties对象，保存了数据库配置信息
-    private static Properties properties;
-
     // 初始化配置文件
-    public JdbcUtil() {
+    public JdbcUtil2() {
         System.out.println("开始加载数据库配置文件");
-        InputStream inputStream = JdbcUtil.class
-                .getResourceAsStream("jdbc.properties");
-        properties = new Properties();
         try {
+            InputStream inputStream = JdbcUtil.class
+                    .getResourceAsStream("jdbc.properties");
+            Properties properties = new Properties();
             properties.load(inputStream);
             USERNAME = properties.getProperty("jdbc.username");
             PASSWORD = properties.getProperty("jdbc.password");
+            DRIVER = properties.getProperty("jdbc.driver");
             URL = properties.getProperty("jdbc.url");
-            properties.put("user", USERNAME);
-            properties.put("password", PASSWORD);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -56,24 +53,12 @@ public class JdbcUtil {
 
     public Connection getConnection() {
         try {
-            //Class.forName("oracle.jdbc.OracleDriver");
-            Driver driver = new OracleDriver();
-            DriverManager.deregisterDriver(driver);
-            connection = DriverManager.getConnection(URL, properties);
+            Class.forName(DRIVER);
+            connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
             System.out.println("获取数据库连接成功，connection：" + connection);
-            //preparedStatement = connection.prepareStatement("select * from user_info");
-//            preparedStatement = connection.prepareStatement("insert into user_info(user_name, age) values(?, ?)");
-//            preparedStatement.setString(1, "测试用户");
-//            preparedStatement.setString(2, "22");
-//            int row = preparedStatement.executeUpdate();
-//            System.out.println("成功插入了：" + row + "行");
-//            while (resultSet.next()) {
-//                int id = resultSet.getInt(1);
-//                String user_name = resultSet.getString(2);
-//                String age = resultSet.getString(3);
-//                System.out.println(id + ", " + user_name + ", " + age);
-//            }
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
         return connection;
@@ -90,7 +75,7 @@ public class JdbcUtil {
     public boolean updateByPreparedStatement(String sql, List<?> params)
             throws SQLException {
         boolean flag = false;
-        int result = -1;  // 表示当用户执行添加删除和修改的时候所影响数据库的行数
+        int result = -1; // 表示当用户执行添加删除和修改的时候所影响数据库的行数
         preparedStatement = connection.prepareStatement(sql);
         int index = 1;
         // 填充sql语句中的占位符
@@ -175,33 +160,33 @@ public class JdbcUtil {
     }
 
     public static void main(String[] args) {
-        JdbcUtil jdbcUtil = new JdbcUtil();
-        jdbcUtil.getConnection();
+        JdbcUtil2 jdbcUtil2 = new JdbcUtil2();
+        jdbcUtil2.getConnection();
         try {
             // 增加数据
             List<Object> paramsInsert = new ArrayList<Object>();
             paramsInsert.add("测试");
             paramsInsert.add(23);
-            boolean resultInsert = jdbcUtil.updateByPreparedStatement("insert into user_info(user_name, age) values(?, ?)", paramsInsert);
+            boolean resultInsert = jdbcUtil2.updateByPreparedStatement("insert into user_info(user_name, age) values(?, ?)", paramsInsert);
             System.out.println(resultInsert);
 
             // 删除数据
             List<Object> paramsDelete = new ArrayList<Object>();
             paramsDelete.add(20);
-            boolean resultDelete = jdbcUtil.updateByPreparedStatement("delete from user_info where id = ?", paramsDelete);
+            boolean resultDelete = jdbcUtil2.updateByPreparedStatement("delete from user_info where id = ?", paramsDelete);
             System.out.println(resultDelete);
 
             // 更新数据
             List<Object> paramsUpdate = new ArrayList<Object>();
             paramsUpdate.add(26);
             paramsUpdate.add(3);
-            boolean result = jdbcUtil.updateByPreparedStatement("update user_info set age = ? where id = ?", paramsUpdate);
+            boolean result = jdbcUtil2.updateByPreparedStatement("update user_info set age = ? where id = ?", paramsUpdate);
             System.out.println(result);
 
             // 查询数据
             List<Object> paramsFind = new ArrayList<Object>();
             paramsFind.add(6);
-            List<Map<String, Object>> resultFind = jdbcUtil.findResult(
+            List<Map<String, Object>> resultFind = jdbcUtil2.findResult(
                     "select * from user_info where id = ?", paramsFind);
             for (Map<String, Object> m : resultFind) {
                 System.out.println(m);
@@ -210,7 +195,7 @@ public class JdbcUtil {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            jdbcUtil.releaseConn();
+            jdbcUtil2.releaseConn();
         }
     }
 }
