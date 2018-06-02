@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3bfde0-1a5c-45cb-b0e2-9ea8c970a520" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil2.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil.java" afterPath="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil.java" />
-      <change beforePath="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/jdbc.properties" afterPath="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/test/JdbcUtil.class" afterPath="$PROJECT_DIR$/SpringImoocMaven/target/test-classes/com/imooc/ioc/test/JdbcUtil.class" />
+      <change beforePath="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil2.java" afterPath="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil2.java" />
     </list>
     <manually-removed-from-ignored>
       <directory path="$PROJECT_DIR$/target/" />
@@ -43,46 +41,46 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpringImoocMaven/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+            <state relative-caret-position="304">
+              <caret line="56" column="139" lean-forward="true" selection-start-line="53" selection-start-column="11" selection-end-line="56" selection-end-column="139" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdbcUtil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JdbcUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="92" column="26" lean-forward="false" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+            <state relative-caret-position="186">
+              <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3604#3625#0" expanded="true" />
-                <element signature="e#4186#4202#0" expanded="true" />
-                <element signature="e#5605#5613#0" expanded="true" />
-                <element signature="e#5946#5954#0" expanded="true" />
-                <element signature="e#6235#6243#0" expanded="true" />
-                <element signature="e#6550#6558#0" expanded="true" />
-                <marker date="1527917606052" expanded="true" signature="1765:1788" ph="select * fro... user_info" />
-                <marker date="1527917606052" expanded="true" signature="1855:1905" ph="insert into user_info... " />
+                <element signature="e#3587#3608#0" expanded="true" />
+                <element signature="e#4169#4185#0" expanded="true" />
+                <element signature="e#5588#5596#0" expanded="true" />
+                <element signature="e#5929#5937#0" expanded="true" />
+                <element signature="e#6218#6226#0" expanded="true" />
+                <element signature="e#6533#6541#0" expanded="true" />
+                <marker date="1527918874446" expanded="true" signature="1748:1771" ph="select * fro... user_info" />
+                <marker date="1527918874446" expanded="true" signature="1838:1888" ph="insert into user_info... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdbcUtil2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JdbcUtil2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2217">
-              <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+            <state relative-caret-position="171">
+              <caret line="39" column="52" lean-forward="false" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2739#2760#0" expanded="true" />
-                <element signature="e#3321#3337#0" expanded="true" />
-                <element signature="e#4744#4752#0" expanded="true" />
-                <element signature="e#5086#5094#0" expanded="true" />
-                <element signature="e#5376#5384#0" expanded="true" />
-                <element signature="e#5692#5700#0" expanded="true" />
+                <element signature="e#2750#2771#0" expanded="true" />
+                <element signature="e#3332#3348#0" expanded="true" />
+                <element signature="e#4755#4763#0" expanded="true" />
+                <element signature="e#5097#5105#0" expanded="true" />
+                <element signature="e#5387#5395#0" expanded="true" />
+                <element signature="e#5703#5711#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -250,9 +248,9 @@
         <option value="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/IteratorList.java" />
         <option value="$PROJECT_DIR$/SpringImoocMaven/pom.xml" />
         <option value="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/jdbcUtil2.java" />
-        <option value="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil.java" />
         <option value="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/jdbc.properties" />
         <option value="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil2.java" />
+        <option value="$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil.java" />
       </list>
     </option>
   </component>
@@ -382,6 +380,13 @@
       <recent name="com.imooc.ioc.aop.schema.service" />
       <recent name="com.imooc.ioc.aop" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Spring\SpringImoocMaven\src\main\resources\jdbc" />
+      <recent name="D:\Spring\SpringImoocMaven\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.imooc.ioc.annotation.multibean" />
     </key>
@@ -391,13 +396,6 @@
       <recent name="D:\Spring\SpringImoocMaven\src\main\java\com\imooc\ioc\aop\aspectj" />
       <recent name="D:\Spring\SpringImoocMaven\src\main\resources\spring" />
       <recent name="D:\Spring\SpringImoocMaven\src\main\java\com\imooc\ioc\aop\api" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Spring\SpringImoocMaven\src\main\resources\jdbc" />
-      <recent name="D:\Spring\SpringImoocMaven\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -678,14 +676,7 @@
       <workItem from="1527664254614" duration="3148000" />
       <workItem from="1527835950568" duration="1391000" />
       <workItem from="1527842127608" duration="2086000" />
-      <workItem from="1527907124791" duration="8164000" />
-    </task>
-    <task id="LOCAL-00034" summary="基于java的容器注解（test）">
-      <created>1523178359910</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1523178359910</updated>
+      <workItem from="1527907124791" duration="9256000" />
     </task>
     <task id="LOCAL-00035" summary="Spring Bean装配之基于Java的容器注解说明——@ImportResource和@Value">
       <created>1523274654923</created>
@@ -1023,7 +1014,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527917126202</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Oracle工具类">
+      <created>1527917840024</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1527917840024</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1059,7 +1057,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141664000" />
+    <option name="totallyTimeSpent" value="142756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1073,12 +1071,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206751" sideWeight="0.5093313" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36988544" sideWeight="0.49066874" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117839605" sideWeight="0.49066874" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31587562" sideWeight="0.49066874" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24886535" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1133,8 +1131,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring Bean装配之Spring对JSR支持的说明 更新配置文件" />
-    <MESSAGE value="配置切面切入点Aspect" />
     <MESSAGE value="更新配置文件，工程文件" />
     <MESSAGE value="advice应用（上） 测试类" />
     <MESSAGE value="advice应用（上）" />
@@ -1158,7 +1154,9 @@
     <MESSAGE value="java io操作" />
     <MESSAGE value="Redis入门" />
     <MESSAGE value="Oracle工具类以及迭代器" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oracle工具类以及迭代器" />
+    <MESSAGE value="Oracle工具类" />
+    <MESSAGE value="Oracle工具类update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oracle工具类update" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1291,14 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringImoocMaven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_121/src.zip!/java/sql/PreparedStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-256">
@@ -1339,24 +1329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="92" column="26" lean-forward="false" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3604#3625#0" expanded="true" />
-            <element signature="e#4186#4202#0" expanded="true" />
-            <element signature="e#5605#5613#0" expanded="true" />
-            <element signature="e#5946#5954#0" expanded="true" />
-            <element signature="e#6235#6243#0" expanded="true" />
-            <element signature="e#6550#6558#0" expanded="true" />
-            <marker date="1527917606052" expanded="true" signature="1765:1788" ph="select * fro... user_info" />
-            <marker date="1527917606052" expanded="true" signature="1855:1905" ph="insert into user_info... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1365,18 +1337,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SpringImoocMaven/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="56" column="139" lean-forward="true" selection-start-line="53" selection-start-column="11" selection-end-line="56" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2217">
-          <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        <state relative-caret-position="171">
+          <caret line="39" column="52" lean-forward="false" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2739#2760#0" expanded="true" />
-            <element signature="e#3321#3337#0" expanded="true" />
-            <element signature="e#4744#4752#0" expanded="true" />
-            <element signature="e#5086#5094#0" expanded="true" />
-            <element signature="e#5376#5384#0" expanded="true" />
-            <element signature="e#5692#5700#0" expanded="true" />
+            <element signature="e#2750#2771#0" expanded="true" />
+            <element signature="e#3332#3348#0" expanded="true" />
+            <element signature="e#4755#4763#0" expanded="true" />
+            <element signature="e#5097#5105#0" expanded="true" />
+            <element signature="e#5387#5395#0" expanded="true" />
+            <element signature="e#5703#5711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringImoocMaven/src/test/java/com/imooc/ioc/test/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3587#3608#0" expanded="true" />
+            <element signature="e#4169#4185#0" expanded="true" />
+            <element signature="e#5588#5596#0" expanded="true" />
+            <element signature="e#5929#5937#0" expanded="true" />
+            <element signature="e#6218#6226#0" expanded="true" />
+            <element signature="e#6533#6541#0" expanded="true" />
+            <marker date="1527918874446" expanded="true" signature="1748:1771" ph="select * fro... user_info" />
+            <marker date="1527918874446" expanded="true" signature="1838:1888" ph="insert into user_info... " />
           </folding>
         </state>
       </provider>

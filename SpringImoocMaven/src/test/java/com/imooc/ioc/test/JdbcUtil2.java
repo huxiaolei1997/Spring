@@ -37,8 +37,7 @@ public class JdbcUtil2 {
     public JdbcUtil2() {
         System.out.println("开始加载数据库配置文件");
         try {
-            InputStream inputStream = JdbcUtil.class
-                    .getResourceAsStream("jdbc.properties");
+            InputStream inputStream = JdbcUtil.class.getResourceAsStream("jdbc.properties");
             Properties properties = new Properties();
             properties.load(inputStream);
             USERNAME = properties.getProperty("jdbc.username");

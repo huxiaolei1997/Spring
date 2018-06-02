@@ -38,8 +38,7 @@ public class JdbcUtil {
     // 初始化配置文件
     public JdbcUtil() {
         System.out.println("开始加载数据库配置文件");
-        InputStream inputStream = JdbcUtil.class
-                .getResourceAsStream("jdbc.properties");
+        InputStream inputStream = JdbcUtil.class.getResourceAsStream("jdbc.properties");
         properties = new Properties();
         try {
             properties.load(inputStream);
