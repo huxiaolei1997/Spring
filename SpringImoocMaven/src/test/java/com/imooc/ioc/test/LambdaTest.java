@@ -1,5 +1,8 @@
 package com.imooc.ioc.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author xiaolei hu
  * @date 2018/6/13 21:51
@@ -25,6 +28,16 @@ public class LambdaTest {
         };
         greetingService.sayMessage("Google");
         greetingService.sayMessage("Alibaba");
+
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(1);
+        integerList.add(2);
+        integerList.add(3);
+        integerList.add(4);
+        integerList.add(5);
+        integerList.add(6);
+        integerList.forEach(e -> System.out.println(e));// 或者可以这样写
+        integerList.forEach(System.out::println);
     }
 
     private int operate(int a, int b, MathOperation mathOperation) {
