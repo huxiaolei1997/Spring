@@ -1,5 +1,7 @@
 package com.imooc.ioc.test;
 
+import java.util.Arrays;
+
 /**
  * @author xiaolei hu
  * @date 2018/6/14 14:07
@@ -25,5 +27,19 @@ public class ThreadTest {
             }
         });
         thread1.start();
+//        try {
+//            thread1.wait();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        ThreadTest threadTest = new ThreadTest();
+        threadTest.test();
+    }
+
+    public void test(int... a) {
+        System.out.println(a.length);
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
     }
 }

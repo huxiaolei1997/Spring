@@ -32,4 +32,8 @@ public class Player {
         System.out.println(integer.intValue());
         //player.size
     }
+
+//    void throws() {
+//
+//    }
 }
