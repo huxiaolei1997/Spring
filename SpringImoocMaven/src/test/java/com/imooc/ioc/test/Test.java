@@ -19,5 +19,6 @@ public class Test {
         List Listlist2 = Listlist1;
         System.out.println(Listlist1.get(0) instanceof Integer);
         System.out.println(Listlist2.get(0) instanceof Integer);
+        List<String> arrayList = new ArrayList<>();
     }
 }

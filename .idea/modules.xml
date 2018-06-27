@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Spring/SpringImoocMaven/SpringImoocMaven.iml" filepath="$PROJECT_DIR$/../Spring/SpringImoocMaven/SpringImoocMaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringImoocMaven/SpringImoocMaven.iml" filepath="$PROJECT_DIR$/SpringImoocMaven/SpringImoocMaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestServlet/TestServlet.iml" filepath="$PROJECT_DIR$/TestServlet/TestServlet.iml" />
     </modules>
   </component>
 </project>
