@@ -64,6 +64,21 @@
                 <prop key="3">333</prop>
             </props>
         </property>
+        <property name="map">
+            <map>
+                <entry key="1" value-ref="injectionListOneService"/>
+                <entry key="2" value-ref="injectionListTwoService"/>
+                <entry key="3" value-ref="injectionListThreeService"/>
+            </map>
+        </property>
+        <!-- 给set注入值，set中不能有相同的对象-->
+        <property name="set">
+            <set>
+                <ref bean="injectionListOneService"></ref>
+                <ref bean="injectionListOneService"></ref>
+                <ref bean="injectionListOneService"></ref>
+            </set>
+        </property>
     </bean>
     <bean id="injectionListOneService" class="com.imooc.ioc.injection.InjectionListOneServiceImpl"></bean>
     <bean id="injectionListTwoService" class="com.imooc.ioc.injection.InjectionListTwoServiceImpl"></bean>

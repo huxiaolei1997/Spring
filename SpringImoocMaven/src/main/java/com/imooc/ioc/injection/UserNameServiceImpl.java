@@ -1,8 +1,6 @@
 package com.imooc.ioc.injection;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 
 /**
  * @author xiaolei hu
@@ -14,6 +12,16 @@ public class UserNameServiceImpl implements UserNameService {
     private List<Integer> list;
     private List<Object> list2;
     private Properties properties;
+    private Map<Integer, Object> map;
+    private Set<Object> set;
+
+    public void setSet(Set<Object> set) {
+        this.set = set;
+    }
+
+    public void setMap(Map<Integer, Object> map) {
+        this.map = map;
+    }
 
     public void setProperties(Properties properties) {
         this.properties = properties;
@@ -43,6 +51,13 @@ public class UserNameServiceImpl implements UserNameService {
         }
         for (Map.Entry<Object, Object> entry : properties.entrySet()) {
             System.out.println(entry.getKey() + "," + entry.getValue());
+        }
+
+        for (Map.Entry<Integer, Object> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ", " + entry.getValue());
+        }
+        for (Object o : set) {
+            System.out.println(o.hashCode());
         }
     }
 }
