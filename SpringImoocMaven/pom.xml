@@ -43,13 +43,6 @@
           <version>2.0.8</version>
       </dependency>
 
-      <!-- redis-->
-      <dependency>
-          <groupId>redis.clients</groupId>
-          <artifactId>jedis</artifactId>
-          <version>2.9.0</version>
-      </dependency>
-
       <!-- 手动添加oracle依赖，要先在maven里面添加maven的依赖关系，命运如下 -->
       <!-- # 通过cmd运行
            mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar -Dfile=ojdbc8.jar
