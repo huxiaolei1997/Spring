@@ -1,12 +1,12 @@
 package com.imooc.ioc.aop.aspectj.biz;
 
-import com.imooc.ioc.aop.biz.AspectBiz;
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MoocBizTest extends TestCase {
+public class MoocBizTest {
 
+    @Test
     public void testSave() {
         String springXmlPath = "classpath*:spring/spring-aop-aspectj.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

@@ -1,13 +1,14 @@
 package com.imooc.ioc.autowiring;
 
-import com.imooc.ioc.aware.MoocApplicationContext;
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class AutoWiringServiceTest extends TestCase {
+public class AutoWiringServiceTest {
+
 
     // 测试根据 byName 注入依赖（bean）
+    @Test
     public void testSay() {
         String springXmlPath = "classpath*:spring/spring-ioc.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

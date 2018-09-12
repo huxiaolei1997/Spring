@@ -1,13 +1,14 @@
 package com.imooc.ioc.resource;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
 
-public class MoocResourceTest extends TestCase {
+public class MoocResourceTest {
 
+    @Test
     public void testResource() throws IOException {
         String springXmlPath = "classpath*:spring/spring-ioc.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

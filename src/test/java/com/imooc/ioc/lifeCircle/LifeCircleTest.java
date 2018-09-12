@@ -1,13 +1,12 @@
 package com.imooc.ioc.lifeCircle;
 
-import javafx.application.Application;
-import junit.framework.TestCase;
-import org.springframework.context.ApplicationContext;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class LifeCircleTest extends TestCase {
+public class LifeCircleTest {
 
+    @Test
     public void testInitOrDestroy() {
         String springXmlPath = "classpath*:spring/spring-ioc.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

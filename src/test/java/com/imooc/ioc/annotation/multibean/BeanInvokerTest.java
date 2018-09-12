@@ -1,13 +1,12 @@
 package com.imooc.ioc.annotation.multibean;
 
-import com.imooc.ioc.annotation.injection.InjectionService;
-import junit.framework.TestCase;
-import org.springframework.context.annotation.Bean;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class BeanInvokerTest extends TestCase {
+public class BeanInvokerTest {
 
+    @Test
     public void testSay() {
         String springXmlPath = "classpath*:spring/spring-beanannotation.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

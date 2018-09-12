@@ -52,7 +52,7 @@ public class StoreConfig {
         return new IntegerStore();
     }
 
-    @Bean(name = "stringStoreTest")
+    @Bean(name = "stringStore")
     public Store<String> stringStoreTest() {
         System.out.println("s1:" + s1.getClass().getName());
         System.out.println("s2:" + s2.getClass().getName());

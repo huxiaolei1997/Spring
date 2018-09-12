@@ -1,70 +1,85 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.imooc.ioc</groupId>
-  <artifactId>SpringImoocMaven</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>SpringImoocMaven Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-    <!-- junit-->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.2</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- Spring 依赖-->
-    <dependency>
-       <groupId>org.springframework</groupId>
-       <artifactId>spring-context</artifactId>
-       <version>4.1.3.RELEASE</version>
-    </dependency>
-      <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-aop</artifactId>
-          <version>4.1.3.RELEASE</version>
-      </dependency>
-      <dependency>
-          <groupId>javax.inject</groupId>
-          <artifactId>javax.inject</artifactId>
-          <version>1</version>
-      </dependency>
-      <dependency>
-          <groupId>org.aspectj</groupId>
-          <artifactId>aspectjweaver</artifactId>
-          <version>1.8.7</version>
-      </dependency>
-      <!-- https://mvnrepository.com/artifact/org.springframework/spring-dao -->
-      <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-dao</artifactId>
-          <version>2.0.8</version>
-      </dependency>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.imooc.ioc</groupId>
+    <artifactId>SpringImoocMaven</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>SpringImoocMaven Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <!-- junit-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Spring 核心依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.1.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>4.1.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>4.1.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.1.3.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-dao -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-dao</artifactId>
+            <version>2.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.1.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.7</version>
+        </dependency>
 
-      <!-- 手动添加oracle依赖，要先在maven里面添加maven的依赖关系，命运如下 -->
-      <!-- # 通过cmd运行
-           mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar -Dfile=ojdbc8.jar
-           # 通过powershell运行
-           mvn install:install-file "-DgroupId=com.oracle" "-DartifactId=ojdbc8" "-Dversion=12.2.0.1" "-Dpackaging=jar" "-Dfile=ojdbc8.jar"-->
-      <dependency>
-          <groupId>com.oracle</groupId>
-          <artifactId>ojdbc8</artifactId>
-          <version>12.2.0.1</version>
-      </dependency>
-  </dependencies>
-  <build>
-    <finalName>SpringImoocMaven</finalName>
-      <plugins>
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-compiler-plugin</artifactId>
-              <configuration>
-                  <source>1.8</source>
-                  <target>1.8</target>
-              </configuration>
-          </plugin>
-      </plugins>
-  </build>
+        <!-- 手动添加oracle依赖，要先在maven里面添加maven的依赖关系，命运如下 -->
+        <!-- # 通过cmd运行
+             mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar -Dfile=ojdbc8.jar
+             # 通过powershell运行
+             mvn install:install-file "-DgroupId=com.oracle" "-DartifactId=ojdbc8" "-Dversion=12.2.0.1" "-Dpackaging=jar" "-Dfile=ojdbc8.jar"-->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>12.2.0.1</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>SpringImoocMaven</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -1,12 +1,11 @@
 package com.imooc.ioc.aop.schema.service;
 
-import com.imooc.ioc.aop.Fit;
-import com.imooc.ioc.aop.biz.AspectBiz;
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class InvokeServiceTest extends TestCase {
+public class InvokeServiceTest {
+    @Test
     public void testSave() {
         String springXmlPath = "classpath*:spring/spring-aop-schema-advisors.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

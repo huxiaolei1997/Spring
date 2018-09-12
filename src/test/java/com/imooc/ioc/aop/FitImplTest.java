@@ -1,12 +1,13 @@
 package com.imooc.ioc.aop;
 
 import com.imooc.ioc.aop.biz.AspectBiz;
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class FitImplTest extends TestCase {
+public class FitImplTest {
 
+    @Test
     public void testFilter() {
         String springXmlPath = "classpath*:spring/spring-aop-schema-advice.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

@@ -1,11 +1,12 @@
 package com.imooc.ioc.annotation.injection;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class InjectionServiceImplTest extends TestCase {
+public class InjectionServiceImplTest {
 
+    @Test
     public void testSayHelloWorld() {
         String springXmlPath = "classpath*:spring/spring-beanannotation.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

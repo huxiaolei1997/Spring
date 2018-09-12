@@ -1,12 +1,12 @@
 package com.imooc.ioc.annotation.javabased;
 
-import com.imooc.ioc.annotation.injection.InjectionService;
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class StoreConfigTest extends TestCase {
+public class StoreConfigTest {
 
+    @Test
     public void testGetStringStore() {
         String springXmlPath = "classpath*:spring/spring-beanannotation.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器
@@ -22,6 +22,7 @@ public class StoreConfigTest extends TestCase {
         abstractApplicationContext.close();
     }
 
+    @Test
     public void testStringStore2() {
         String springXmlPath = "classpath*:spring/spring-beanannotation.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器
@@ -41,6 +42,7 @@ public class StoreConfigTest extends TestCase {
         abstractApplicationContext.close();
     }
 
+    @Test
     public void testMyDriverManager() {
         String springXmlPath = "classpath*:spring/spring-beanannotation.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器
@@ -55,6 +57,7 @@ public class StoreConfigTest extends TestCase {
 
     }
 
+    @Test
     public void testStringStore3() {
         String springXmlPath = "classpath*:spring/spring-beanannotation.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

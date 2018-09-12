@@ -1,11 +1,12 @@
 package com.imooc.ioc.injection;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class InjectionServiceImplTest extends TestCase {
+public class InjectionServiceImplTest {
 
+    @Test
     public void testSayHelloWorld() {
        // InjectionServiceImplTest injectionServiceImplTest = new InjectionServiceImplTest();
         // 加载spring-ioc.xml配置文件

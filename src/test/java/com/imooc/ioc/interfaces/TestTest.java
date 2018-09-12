@@ -1,9 +1,8 @@
 package com.imooc.ioc.interfaces;
 
-import junit.framework.TestCase;
+public class TestTest {
 
-public class TestTest extends TestCase {
-
+    @org.junit.Test
     public void testMyPrint() {
         Test.testSpring();
     }

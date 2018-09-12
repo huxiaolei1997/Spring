@@ -1,12 +1,12 @@
 package com.imooc.ioc.aop.api;
 
-import com.imooc.ioc.aop.schema.service.InvokeService;
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class BizLogicImplTest extends TestCase {
+public class BizLogicImplTest {
 
+    @Test
     public void testSave() {
         String springXmlPath = "classpath*:spring/spring-aop-api.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器

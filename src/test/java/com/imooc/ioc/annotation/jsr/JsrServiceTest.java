@@ -1,12 +1,12 @@
 package com.imooc.ioc.annotation.jsr;
 
-import com.imooc.ioc.annotation.javabased.MyDriverManager;
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class JsrServiceTest extends TestCase {
+public class JsrServiceTest {
 
+    @Test
     public void testSave() {
         String springXmlPath = "classpath*:spring/spring-beanannotation.xml";
         // 非web应用使用AbstractApplicationContext初始化bean容器
