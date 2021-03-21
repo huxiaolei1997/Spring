@@ -16,6 +16,8 @@ public class InjectionServiceImplTest {
         AbstractApplicationContext abstractApplicationContext = new ClassPathXmlApplicationContext(springXmlPath);
         abstractApplicationContext.start();
         InjectionService injectionService = abstractApplicationContext.getBean("injectionServiceImpl", InjectionService.class);
+        A a = abstractApplicationContext.getBean("a", A.class);
+        B b = abstractApplicationContext.getBean("b", B.class);
         injectionService.sayHelloWorld("hello, world");
         abstractApplicationContext.close();
     }

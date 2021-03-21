@@ -2,7 +2,10 @@ package com.imooc.ioc.annotation.injection;
 
 import com.imooc.ioc.annotation.injectionDAO.InjectionDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 @Service
 public class InjectionServiceImpl implements InjectionService {
@@ -21,6 +24,7 @@ public class InjectionServiceImpl implements InjectionService {
     }
 
     public void sayHelloWorld(String str) {
+//        ApplicationContextUtils
         System.out.println("测试dependency injection");
         str = str + ":" + this.hashCode();
         injectionDAO.addUser(str);
